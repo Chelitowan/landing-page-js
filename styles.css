@@ -1,0 +1,169 @@
+/* Estilos */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: rgb(127, 253, 255);
+    text-align: center;
+    font-family: 'grobold';
+
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    background-color: lightgoldenrodyellow;
+    
+}
+
+header {
+    align-items: center;
+}
+
+.header h1, h4 {
+    align-items: center;
+    margin: 0;
+    
+}
+
+h4 {
+    letter-spacing: 45px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+nav ul li {
+    padding: 1.5 .5em;
+    margin-left: 30px;
+}
+
+nav li a {
+    color: black;
+    
+}
+
+.left-list, .right-list {
+    list-style: none;
+    margin-left: 50px;
+    font-family: Cochin;
+    font-size: large;
+    
+}
+
+.left-list {
+    display: flex;
+    margin-inline-start: auto;
+    flex-direction: row; 
+}
+
+.right-list {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en una fila horizontal */
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    height: auto;
+    margin-top: auto;
+}
+
+.left-list li, .right-list li {
+    margin-right: 150px; /* Espaciado entre elementos */
+    margin-top: 0%;
+    flex-direction: row;
+}
+
+.mill {
+    font-family: grobold;
+    font-size: 100px;
+    background: linear-gradient(to bottom, #00ff00, #000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    
+}
+
+.ideas {
+    font-family: monospace;
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(to bottom, #ca850f, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+#welcome {
+    margin: 50px;
+}
+
+#about {
+    margin: 50px;
+}
+
+#products {
+    margin: 50px;
+}
+
+#products, h2 {
+    margin: 50px;
+}
+
+#product {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.add-to-cart {
+    background-color: rgb(255, 106, 0);
+    color: white; 
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-style: oblique;
+    
+}
+
+
+.remove-from-cart {
+    background-color: rgb(255, 30, 0);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-style: oblique;
+}
+
+form button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
