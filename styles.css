@@ -1,6 +1,5 @@
 /* Estilos */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +12,12 @@ body {
     background: rgb(127, 253, 255);
     text-align: center;
     font-family: 'grobold';
-
 }
 
 img {
     width: 20%;
     height: 20%;
     background-color: lightgoldenrodyellow;
-    
 }
 
 header {
@@ -30,7 +27,6 @@ header {
 .header h1, h4 {
     align-items: center;
     margin: 0;
-    
 }
 
 h4 {
@@ -45,23 +41,20 @@ nav {
     text-align: center;
     padding: 0;
     justify-content: space-between;
-    
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    
 }
 
 nav ul li {
-    padding: 1.5 .5em;
+    padding: 2px;
     margin-left: 30px;
 }
 
 nav li a {
     color: black;
-    
 }
 
 .left-list, .right-list {
@@ -69,7 +62,6 @@ nav li a {
     margin-left: 50px;
     font-family: Cochin;
     font-size: large;
-    
 }
 
 .left-list {
@@ -80,14 +72,14 @@ nav li a {
 
 .right-list {
     display: flex;
-    flex-direction: row; /* Coloca los elementos en una fila horizontal */
-    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    flex-direction: row;
+    justify-content: flex-end;
     height: auto;
     margin-top: auto;
 }
 
 .left-list li, .right-list li {
-    margin-right: 150px; /* Espaciado entre elementos */
+    margin-right: 150px;
     margin-top: 0%;
     flex-direction: row;
 }
@@ -100,7 +92,6 @@ nav li a {
     background-clip: text;
     color: transparent;
     text-align: center;
-    
 }
 
 .ideas {
@@ -111,7 +102,6 @@ nav li a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    
 }
 
 #welcome {
@@ -130,26 +120,44 @@ nav li a {
     margin: 50px;
 }
 
-#product {
+.product {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
-.add-to-cart {
-    background-color: rgb(255, 106, 0);
+#cart-items .add-to-cart {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+#product-list .add-to-cart {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.add-to-cart, .remove-from-cart {
+    background-color: red;
     color: white; 
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
     cursor: pointer;
     font-style: oblique;
-    
 }
 
-
-.remove-from-cart {
-    background-color: rgb(255, 30, 0);
-    color: white;
+#reset-cart {
+    background-color: red;
+    color: white; 
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
@@ -157,13 +165,50 @@ nav li a {
     font-style: oblique;
 }
 
+#product-list .product {
+    margin-bottom: 10px;
+}
+
+
+#cart-items .cart-item {
+    margin-bottom: 10px;
+}
+
+
+form textarea {
+    width: 550px;
+}
+
 form button {
-    background-color: purple;
+    background-color: green;
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 10px;
     cursor: pointer;
+    width: 550px;
+    margin-top: 10px;
 }
 
 
+footer {
+    margin-top: 100px;
+}
+
+
+footer i {
+    width: 100px; /* Aumenta el tamaño de los iconos */
+    height: 100px; /* Aumenta el tamaño de los iconos */
+    margin: 10px; /* Espacio entre los iconos */
+}
+
+
+footer a {
+    color: black; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+
+footer a:hover {
+    color: green; /* Cambia el color del texto del enlace al pasar el mouse */
+}

@@ -37,8 +37,8 @@
     
     
     <section id="welcome">
-        <h2>Bienvenidos a nuestra Tienda en Línea</h2>
-        <p>Descubre nuestros productos a precios increíbles.</p>
+        <h2>Bienvenidos a nuestra Tienda en Linea</h2>
+        <p>Descubre nuestros productos a precios increibles.</p>
         <div class="gallery-image">
             <img class="imagen1" src="./remera negra judas.PNG">
             <img class="imagen2" src="./taza magica.JPG">
@@ -53,80 +53,39 @@
         <div class="servicio-calidad">
             <img class="img2" src="./servicio.png">
             <img class="img3" src="./experiencia.png">
+            <p>"En M.I.L.L. Ideas, nos especializamos en la personalización de una amplia gama de productos, 
+            desde remeras y buzos hasta camperas, tazas, chops, rompecabezas, llaveros, carcasas para celulares,
+            stickers, termos, mates y mucho más. Nuestra pasión es transformar tus ideas en realidades estampadas.
+            ¡Deja volar tu creatividad y personaliza cualquier artículo con nosotros!"</p>
         </div>
     </section>
     
     <section id="products">
         <h2>Nuestros Productos</h2>
         <div id="product-list">
-            <!-- Aqui se generara la lista de productos desde JavaScript -->
+            <!-- Aca se genera la lista de productos -->
         </div>
-        <div id="filter">
-            <label for="category">Filtrar por Categoría:</label>
-            <select id="category">
-                <option value="all">Todos</option>
-                <option value="clothing">Textil</option>
-                <option value="polymer">Polimero/Plastico</option>
-                <option value="others">Otros</option>
-            </select>
-        </div>
-        <h2>Productos</h2>
-    <div class="product">
-        <span class="product-name">Remeras</span>
-        <span class="product-price">$6800</span>
-        <button class="add-to-cart">Agregar</button>
-        <button class="remove-from-cart">Quitar</button>
-    </div>
-
-    <div class="product">
-        <span class="product-name">Tazas</span>
-        <span class="product-price">$2400</span>
-        <button class="add-to-cart">Agregar</button>
-        <button class="remove-from-cart">Quitar</button>
-    </div>
-
-    <div class="product">
-        <span class="product-name">Camperas</span>
-        <span class="product-price">$14.600</span>
-        <button class="add-to-cart">Agregar</button>
-        <button class="remove-from-cart">Quitar</button>
-    </div>
-
-    <div class="product">
-        <span class="product-name">Palanquera</span>
-        <span class="product-price">$1800</span>
-        <button class="add-to-cart">Agregar</button>
-        <button class="remove-from-cart">Quitar</button>
-    </div>
-
-    <div class="product">
-        <span class="product-name">Carcasas celular</span>""
-        <span class="product-price">$2800</span>
-        <button class="add-to-cart">Agregar</button>
-        <button class="remove-from-cart">Quitar</button>
-    </div>
-
-    <div class="product">
-        <span class="product-name">Rompecabezas</span>
-        <span class="product-price">$1600</span>
-        <button class="add-to-cart">Agregar</button>
-        <button class="remove-from-cart">Quitar</button>
-    </div>
-
     </section>
+       
     
-    <div id="cart">
+    <section id="cart">
         <h2>Carrito de Compras</h2>
-        <!-- Aqui se mostraran los productos seleccionados por el usuario -->
-    </div>
+        <div id="cart-items">
+            <!-- Aquí se mostrarán los productos seleccionados -->
+        </div>
+        <div id="cart-total">
+            <p>Total: $<span id="cart-total-amount">0.00</span></p>
+            <button id="reset-cart">Reiniciar Carrito</button>
+        </div>
+    </section>
 
     <section id="contact">
         <h2>Contacto</h2>
-        <p>Contáctanos para cualquier pregunta o comentario.</p><br>
+        <p>Contactanos para cualquier pregunta o comentario.</p><br>
         <form>
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
-            <label for="email">Correo Electrónico:</label>
+            <label for="email">Correo Electronico:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="message">Mensaje:</label><br><br>
             <textarea id="message" name="message" rows="4" required></textarea><br>
@@ -134,12 +93,15 @@
         </form>
     </section>
 
+   
     <footer>
-        <p>&copy; 2023 Tienda en Linea. Todos los derechos reservados.</p>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <p>&copy; 2023 Tienda en Línea. Todos los derechos reservados.</p>
     </footer>
-
     
-
     <script src="script.js"></script>
 </body>
 </html>
