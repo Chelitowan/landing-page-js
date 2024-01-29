@@ -113,7 +113,11 @@ nav li a {
 }
 
 #products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 50px;
+    
 }
 
 #products, h2 {
@@ -122,6 +126,64 @@ nav li a {
 
 .product {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* cards */
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.product-card {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+.product-card img {
+    width: 75%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-info {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font-weight: bold;
+}
+
+
+.add-to-cart {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.add-to-cart:hover,
+.remove-from-cart:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
@@ -135,25 +197,28 @@ nav li a {
 }
 
 
-#product-list .add-to-cart {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-
-.add-to-cart, .remove-from-cart {
-    background-color: red;
+.remove-from-cart {
+    background-color: orange;
     color: white; 
     border: none;
     border-radius: 10px;
     padding: 5px 10px;
     cursor: pointer;
     font-style: oblique;
+    width: auto;
 }
+
+.green-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-style: oblique;
+    margin-right: 10px;
+}
+
 
 #reset-cart {
     background-color: red;
@@ -163,10 +228,6 @@ nav li a {
     padding: 5px 10px;
     cursor: pointer;
     font-style: oblique;
-}
-
-#product-list .product {
-    margin-bottom: 10px;
 }
 
 
