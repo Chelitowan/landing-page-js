@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 3, name: 'Almohadon 30x30', price: 2800 },
         { id: 4, name: 'Taza Magica', price: 7000 },
         { id: 5, name: 'Rompecabezas Polimero', price: 3200 },
-        { id: 6, name: 'Palanquera', price: 2300 }
+        { id: 6, name: 'Carcasas celular', price: 3800 }
     ];
 
     function renderProducts() {
